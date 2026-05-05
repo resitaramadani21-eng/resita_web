@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cloud Computing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #1a73e8;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #1a73e8;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0c5ecf;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cloud Computing</h1>
+    <p>Belajar Teknologi Cloud dengan Mudah</p>
+</header>
+
+<nav>
+    <a href="#pengertian">Pengertian</a>
+    <a href="#karakteristik">Karakteristik</a>
+    <a href="#layanan">Model Layanan</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="pengertian">
+        <h2>Pengertian Cloud Computing</h2>
+        <p>
+            Cloud computing adalah teknologi yang memungkinkan pengguna mengakses 
+            server, penyimpanan, database, dan aplikasi melalui internet tanpa 
+            harus memiliki perangkat keras sendiri.
+        </p>
+    </div>
+
+    <div class="card" id="karakteristik">
+        <h2>Karakteristik Cloud Computing</h2>
+        <ul>
+            <li>On-demand self service</li>
+            <li>Broad network access</li>
+            <li>Resource pooling</li>
+            <li>Rapid elasticity</li>
+            <li>Measured service</li>
+        </ul>
+    </div>
+
+    <div class="card" id="layanan">
+        <h2>Model Layanan Cloud</h2>
+        <ul>
+            <li><b>IaaS</b> - Infrastruktur sebagai layanan</li>
+            <li><b>PaaS</b> - Platform untuk pengembangan</li>
+            <li><b>SaaS</b> - Software siap pakai</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Interaksi</h2>
+        <p>Klik tombol di bawah untuk mengetahui manfaat cloud computing:</p>
+        <button onclick="tampilManfaat()">Tampilkan Manfaat</button>
+        <p id="output"></p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 - Cloud Computing Project</p>
+</footer>
+
+<script>
+function tampilManfaat() {
+    document.getElementById("output").innerHTML =
+        "Cloud Computing membantu menghemat biaya, fleksibel, dan dapat diakses dari mana saja.";
+}
+</script>
+
+</body>
+</html>
